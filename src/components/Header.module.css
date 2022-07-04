@@ -21,7 +21,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 1px solid var(--gray-600);
+  border-bottom: 1px solid var(--gray-400);
   transition: .5s;
 }
 

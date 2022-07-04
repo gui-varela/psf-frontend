@@ -1,0 +1,64 @@
+:root {
+  --white: #fff;
+  --black: #111;
+  --black-shadow: #00000088;
+  --soft-black-shadow: #00000044;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+
+  --green-300: #8ba191;
+  --green-500: #1b963b;
+  --blue-500: #2f43a5;
+}
+
+.App {
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var() var();
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--blue-500);
+  border-radius: 20px;
+  border: 1px solid var(--black);
+}
+
+body {
+  background-color: var(--gray-900);
+  background-image: url(./assets/pro-skill-futsal-kids-hugging.png);
+  color: var(--gray-100);
+  -webkit-font-smoothing: antialiased;
+  backdrop-filter: blur(40px) brightness(.15);
+  -webkit-backdrop-filter: blur(70px);
+}
+
+body, input, textarea, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+

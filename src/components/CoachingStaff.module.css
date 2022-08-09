@@ -1,0 +1,170 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem 0;
+  background-color: var(--gray-700);
+}
+
+.coachesSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.title h1 {
+  padding-bottom: 1rem;
+  font-family: 'Kanit';
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  line-height: 3rem;
+  border-bottom: 3px solid var(--green-500);
+  animation: rise 2s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 400px;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  max-height: 400px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  overflow-x: hidden;
+  height: 100%;
+  padding: 5rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px 0 var(--black-shadow) inset;
+}
+
+.smallCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 14rem;
+  height: 14rem;
+  margin: 0 2rem;
+  background-color: var(--gray-600);
+  border-radius: 10px;
+  box-shadow: 0px 15px 15px var(--soft-black-shadow);
+  opacity: .3;
+}
+
+.mainCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 21rem;
+  height: 21rem;
+  margin: 0 2rem;
+  background-color: var(--gray-600);
+  border-radius: 15px;
+  box-shadow: 0px 20px 20px var(--soft-black-shadow);
+}
+
+.mainCard .imgContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40%;
+  height: 40%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 5px var(--green-500);
+  box-shadow: 0 5px 5px var(--soft-black-shadow);
+  margin-bottom: 2rem;
+}
+
+.mainCard .imgContainer img {
+  height: 130%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.mainCard .profile h3 {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.mainCard .profile p {
+  color: var(--gray-400);
+  font-style: italic;
+}
+
+.smallCard .imgContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40%;
+  height: 40%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 4px var(--green-500);
+  box-shadow: 0 5px 5px var(--soft-black-shadow);
+  margin-bottom: 1.4rem;
+}
+
+.smallCard .imgContainer img {
+  height: 130%;
+}
+
+.smallCard .profile h3 {
+  font-size: 1.4rem;
+  margin-bottom: .35rem;
+}
+
+.smallCard .profile p {
+  font-size: .7rem;
+  color: var(--gray-400);
+  font-style: italic;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 5rem;
+}
+
+.selected {
+  width: 9px;
+  height: 9px;
+  background-color: var(--green-500);
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px var(--soft-black-shadow);
+}
+
+.notSelected {
+  width: 7px;
+  height: 7px;
+  background-color: var(--gray-400);
+  border-radius: 50%;
+  box-shadow: 0px 3px 3px var(--soft-black-shadow);
+}

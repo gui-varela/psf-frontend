@@ -1,7 +1,7 @@
 .main {
   margin-top: 5rem;
   width: 100%;
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   padding: 0 15%;
@@ -94,10 +94,13 @@
 
 .section p {
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  margin: 1rem 0;
 }
 
 .section a {
+  display: flex;
+  align-items: center;
   margin: 1.5rem 0;
   font-size: 1.5rem;
   background-color: transparent;

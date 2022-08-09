@@ -1,48 +1,63 @@
 import { useState } from 'react'
-import { Airplane, SoccerBall, Alarm } from 'phosphor-react'
+import { Pencil, ChartLineUp, SoccerBall, Alarm } from 'phosphor-react'
 
 import styles from './TrainingProgramSection.module.css'
 
-export function TrainingProgramSection({ canAnimate }) {
-  const [number, setNumber] = useState(0);
+import trainingProgramImg from '../assets/training-program-1.jpg'
 
-  function handleNumber() {
-    setTimeout(() => {
-        setNumber(number+1)
-        console.log(number)    
-    }, (Math.pow((number-10)*(-1), 4)+10000)/400000);
+export function TrainingProgramSection({ backgroundColor, imageSide, hasTitle, subtitleText, subtitleIcon, description }) {
+  const renderTitle = () => {
+    if (hasTitle) {
+      return (<h1 >Training Program</h1>)
+   }
   }
 
-  if (canAnimate && number < 100)
-    handleNumber()
+  const chooseIcon = () => {
+    if (subtitleIcon == "ball") {
+      return (<SoccerBall />)
+    }
+    else if (subtitleIcon == "chart") {
+      return (<ChartLineUp />)
+    }
+    return (<Alarm />)
+  }
+
+  const imageContainer = (side) => {
+    let id = side == "left" ? styles.leftImageContainer : styles.rightImageContainer
+    return (
+      <div id={id} className={styles.imageContainer}>
+        <img src={trainingProgramImg} alt="" srcset="" />
+      </div>
+    )
+    
+  }
+
+  const setImageSide = (side) => {
+    if (side == imageSide) {
+      return imageContainer(side)
+    }
+  }
 
   return (
-    <section className={styles.section}>
-        <h1>Our Tranining Program</h1>
-        <div className={styles.container}>
-          <div className={styles.item}>
-            <div className={styles.iconTitle}>
-              <Airplane />
-              <h2>{Math.round(number*1.5)}</h2>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div className={styles.item}>
-            <div className={styles.iconTitle}>
-              <SoccerBall />
-              <h2>{number}</h2>
-            </div>
-            <p>Lorem ipsum dolor sit amer, consectetur adipisicing elit.</p>
-          </div>
-          <div className={styles.item}>
-            <div className={styles.iconTitle}>
-              <Alarm />
-              <h2>78</h2>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
+    <section className={ backgroundColor == "dark" ? styles.sectionDarkBackground : styles.sectionLightBackground }>
+      { renderTitle() }
+      <article className={styles.goalSection}>
+
+        { setImageSide("left") }
+
+        <div className={styles.textContainer}>
+          <span>
+            { chooseIcon() }
+            <h2>{ subtitleText }</h2>
+          </span>
+          <p>{ description }</p>
+          <button className={styles.button}>Register Now! <Pencil/></button>
         </div>
-        <button className={styles.button}>Register Now!</button>
+
+        { setImageSide("right") }
+
+      </article>
+      
     </section>
   )
 }

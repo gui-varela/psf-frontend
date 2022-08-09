@@ -50,13 +50,13 @@ export function Header({isTransparent}) {
         <ul>
           <li>
             <a href="http://">
-              <Storefront size={20} />
+              <Storefront size={24} />
               <p>Store</p>
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/proskillsfutsal/">
-              <InstagramLogo size={20} />
+              <InstagramLogo size={24} />
             </a>
           </li>
         </ul>

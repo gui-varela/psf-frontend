@@ -1,27 +1,36 @@
-.section {
+.sectionDarkBackground {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--gray-800);
-  padding: 4rem 0;
+  padding: 5rem 0;
+  width: 100%;
 }
-.section h1 {
+
+.sectionLightBackground {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-600);
+  padding: 5rem 0;
+  width: 100%;
+}
+
+section h1 {
   padding-bottom: 1rem;
   font-family: 'Kanit';
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   line-height: 3rem;
   border-bottom: 3px solid var(--green-500);
   animation: rise 2s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  max-width: 1080px;
-  animation: rise 2s cubic-bezier(0.47, 0, 0.745, 0.715);
+.displayNone {
+  display: none;
 }
 
 @keyframes rise {
@@ -33,37 +42,75 @@
   }
 }
 
-.item {
+.goalSection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 2rem 3rem;
-  text-align: center;
-  color: var(--gray-100);
-  font-size: 1.2rem;
-}
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1080px;
+  animation: rise 2s cubic-bezier(0.47, 0, 0.745, 0.715);
+} 
 
-.iconTitle {
+.imageContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  overflow: hidden;
+  max-width: 30rem;
+  height: 20rem;
+  border-radius: 10px;
+  box-shadow: 
+    10px 10px 0px rgba(47, 173, 74, 0.1),
+    20px 20px 1px rgba(47, 173, 74, 0.05); 
 }
 
-.item svg {
-  color: var(--green-300);
+#leftImageContainer {
+  margin-right: 5rem;
+}
+
+#rightImageContainer {
+  margin-left: 5rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 30rem;
+}
+
+.textContainer span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+  animation: rise 2s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.textContainer span svg {
+  margin-right: 1rem;
   height: 2rem;
   width: 2rem;
+  color: var(--green-300);
 }
 
-.item h2 {
-  margin-top: 1rem;
+.textContainer h2 {
+  font-family: 'Kanit';
+  font-size: 2rem;
+  text-align: center;
+}
+
+.textContainer p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 1rem 0;
 }
 
 .button {
-  margin: 3rem 0;
+  display: flex;
+  justify-content: end;
+  margin: 2rem 0;
   background-color: var(--green-500);
   border: 2px solid var(--green-500);
   border-radius: 10px;
@@ -73,6 +120,10 @@
   color: var(--gray-100);
   box-shadow: 0 15px 20px var(--soft-black-shadow);
   animation: go-back 2s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}
+
+.button svg {
+  margin-left: .5rem;
 }
 
 @keyframes go-back {
@@ -100,7 +151,7 @@
     margin-bottom: 1rem;
   }
 
-  .section h1 {
+  h1 {
     padding-bottom: 0rem;
     font-size: 1.7rem;
     margin-bottom: 2rem;

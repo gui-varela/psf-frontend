@@ -43,13 +43,14 @@ header ul {
 
 header ul li {
   list-style: none;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 
 header li a {
   display: flex;
   height: 30px;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   color: var(--gray-100);
@@ -63,9 +64,8 @@ header li a:hover {
   border-bottom: 2px solid var(--green-500);
 }
 
-header svg {
-  size: 2rem;
-  margin-right: 0.5rem;
+header li a p {
+  margin-left: .5rem;
 }
 
 @media (max-width: 1280px) {

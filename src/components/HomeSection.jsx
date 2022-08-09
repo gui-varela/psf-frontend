@@ -7,8 +7,8 @@ export function HomeSection() {
   return (
     <main className={styles.main}>
       <section className={styles.section}>
-        <h1>A futsal Community.</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem suscipit perferendis cupiditate, qui libero tempore molestias quibusdam possimus, ullam id necessitatibus ipsam! Delectus debitis ut, ducimus quae sequi aut sapiente.</p>
+        <h1>About Us</h1>
+        <p>Pro Skill Futsal is a club-neutral supplemental Futsal training program located in Southern part of New Jersey. Pro Skill Futsal has achieved tremendous individual and competitive success in the Youth Futsal Arena at the State, Regional and National levels. </p>
         <a href='#'>
           <ArrowRight />
           <span>Register Now!</span>

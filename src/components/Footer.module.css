@@ -28,6 +28,11 @@
   align-items: center;
   margin-bottom: .3rem;
   color: var(--gray-400);
+  transition: 300ms;
+}
+
+.links .contact p:hover {
+  color: var(--gray-600);
 }
 
 .companyName {

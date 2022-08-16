@@ -1,13 +1,13 @@
 .mainSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   padding: 6rem 4rem;
 }
 
 .mainSection a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: var(--white);
 }
 
@@ -26,12 +26,18 @@
   background-color: var(--green-500);
   max-width: max-content;
   border-radius: 10px;
-  padding: 0.8rem 1rem;
+  border: none;
+  padding: 1rem ;
   font-weight: bolder;
   font-size: 1.7rem;
   color: var(--gray-100);
   box-shadow: 0 15px 20px var(--soft-black-shadow);
   animation: go-back 2s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  transition: 300ms;
+}
+
+.mainSection button:hover {
+  background-color: var(--green-700);
 }
 
 .mainSection button svg {

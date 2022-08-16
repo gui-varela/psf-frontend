@@ -41,6 +41,12 @@
   color: var(--white);
   font-style: italic;
   border-bottom: solid 2px var(--green-300);
+  transition: 300ms;
+}
+
+.contact a:hover {
+  color: var(--gray-300);
+  border-bottom: solid 2px var(--green-500);
 }
 
 .contact p {

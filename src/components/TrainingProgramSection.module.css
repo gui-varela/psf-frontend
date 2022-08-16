@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--gray-800);
-  padding: 5rem 0;
+  padding: 4rem 0;
   width: 100%;
 }
 
@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--gray-600);
-  padding: 5rem 0;
+  padding: 4rem 0;
   width: 100%;
 }
 
@@ -59,8 +59,12 @@ section h1 {
   height: 20rem;
   border-radius: 10px;
   box-shadow: 
-    10px 10px 0px rgba(47, 173, 74, 0.1),
-    20px 20px 1px rgba(47, 173, 74, 0.05); 
+    10px 10px 0px #2f43a533,
+    20px 20px 1px #2f43a533; 
+}
+
+.imageContainer img {
+  max-height: 20rem;
 }
 
 #leftImageContainer {
@@ -120,6 +124,7 @@ section h1 {
   color: var(--gray-100);
   box-shadow: 0 15px 20px var(--soft-black-shadow);
   animation: go-back 2s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  cursor: pointer;
 }
 
 .button svg {
@@ -139,25 +144,64 @@ section h1 {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .sectionDarkBackground {
+    width: 100%;
+    padding: 2rem 0rem;
+  }
+  
+  .sectionLightBackground {
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .goalSection {
+    align-items: center;
     flex-direction: column;
+    padding: 0 2.5rem;
   }
 
-  .item {
-    max-width: 300px;
+  .imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 15rem;
+    min-height: 10rem;
+    border-radius: 7px;
   }
 
-  .item svg {
-    margin-bottom: 1rem;
+  .imageContainer img {
+    height: 100%;
   }
 
-  h1 {
-    padding-bottom: 0rem;
-    font-size: 1.7rem;
+  section h1 {
+    padding-bottom: .5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     line-height: 3rem;
     border-bottom: 3px solid var(--green-500);
     animation: rise 2s cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+  
+  .textContainer h2 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .textContainer p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    margin: 0.8rem 0;
+  }
+
+  #leftImageContainer {
+    margin-right: 0rem;
+    margin-bottom: 3rem;
+  }
+  
+  #rightImageContainer {
+    display: none;
   }
 }
 

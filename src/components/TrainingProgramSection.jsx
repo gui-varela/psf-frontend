@@ -3,12 +3,10 @@ import { Pencil, ChartLineUp, SoccerBall, Alarm } from 'phosphor-react'
 
 import styles from './TrainingProgramSection.module.css'
 
-import trainingProgramImg from '../assets/training-program-1.jpg'
-
-export function TrainingProgramSection({ backgroundColor, imageSide, hasTitle, subtitleText, subtitleIcon, description }) {
+export function TrainingProgramSection({ backgroundColor, image, imageSide, hasTitle, subtitleText, subtitleIcon, description }) {
   const renderTitle = () => {
     if (hasTitle) {
-      return (<h1 >Training Program</h1>)
+      return (<h1>Training Program</h1>)
    }
   }
 
@@ -26,7 +24,7 @@ export function TrainingProgramSection({ backgroundColor, imageSide, hasTitle, s
     let id = side == "left" ? styles.leftImageContainer : styles.rightImageContainer
     return (
       <div id={id} className={styles.imageContainer}>
-        <img src={trainingProgramImg} alt="" srcset="" />
+        <img src={image} alt="" />
       </div>
     )
     

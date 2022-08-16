@@ -6,8 +6,15 @@ import { HomeSection } from './components/HomeSection'
 import { TrainingProgramSection } from './components/TrainingProgramSection'
 import { Form } from './components/Form'
 import { CoachingStaff } from './components/CoachingStaff'
+import { ContactUs } from './components/ContactUs'
+import { Footer } from './components/Footer'
 
 import './global.css' 
+
+import ourGoalImage from './assets/coach-coaching-boys.jpg'
+import selfDevelopmentImage from './assets/boys-training-soccer.png'
+import improvingSkillsImage from './assets/boy-dribbling.jpg'
+import { Registration } from "./components/Registration";
 
 export function App() {
   const [isTransparent, setIsTransparent] = useState(true)
@@ -17,6 +24,7 @@ export function App() {
     const pageHeight = document.querySelector("#pageFeed").getBoundingClientRect().y
     if (pageHeight > 50) {
       setIsTransparent(true)
+      console.log(isTransparent)
     }
     else {
       setIsTransparent(false)
@@ -24,9 +32,6 @@ export function App() {
         setCanAnimate(true)
       }
     }
-    
-    console.log(`isTransparent: ${isTransparent}`)
-    console.log(`canAnimate: ${canAnimate} / scroll: ${pageHeight}`)
   }
   
   return (
@@ -37,6 +42,7 @@ export function App() {
         <TrainingProgramSection 
           hasTitle={true}
           backgroundColor="dark"
+          image={ourGoalImage}
           imageSide="left"
           subtitleIcon="ball"
           subtitleText="Our Goal"
@@ -44,6 +50,7 @@ export function App() {
         />
         <TrainingProgramSection 
           backgroundColor="light"
+          image={selfDevelopmentImage}
           imageSide="right"
           subtitleIcon="chart"
           subtitleText="Self Development"
@@ -51,11 +58,15 @@ export function App() {
         />
         <TrainingProgramSection 
           backgroundColor="dark"
+          image={improvingSkillsImage}
           imageSide="left"
           subtitleText="Improving Skills"
           description="Futsal has helped shape our players' technical proficiency, decision-making in a fast-paced environment, tactical understanding in small Futsal groups and outdoor field settings, improvisation and ability to make quick key adjustments throughout the course of a game."
         />
         <CoachingStaff />
+        <Registration />
+        <ContactUs />
+        <Footer />
       </div>
     </div>
   )

@@ -34,7 +34,7 @@ export function Header({isTransparent}) {
           </a>
         </li>
         <li>
-          <a href="http://">
+          <a className={styles.highlight} href="http://">
             <PencilLine size={20} />
             <p>Registration</p>
           </a>

@@ -21,7 +21,7 @@
   font-family: 'Kanit';
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   line-height: 3rem;
   border-bottom: 3px solid var(--green-500);
   animation: rise 2s cubic-bezier(0.47, 0, 0.745, 0.715);
@@ -39,23 +39,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-y: hidden;
+  margin-bottom: 2rem;
   max-height: 400px;
+  overflow-y: hidden;
+  width: fit-content;
+  border-radius: 40px;
+  border-left: 1px solid var(--gray-800);
+  border-right: 1px solid var(--gray-800);
 }
 
 .main {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 800px;
-  overflow-x: hidden;
-  height: 100%;
-  padding: 5rem 0;
-  margin-bottom: 2rem;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 4rem 1rem 6rem;
+  margin-bottom: -2rem; 
   box-shadow: 0 0 20px 0 var(--black-shadow) inset;
 }
 
-.smallCard{
+/* .smallCard{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,16 +69,16 @@
   border-radius: 10px;
   box-shadow: 0px 15px 15px var(--soft-black-shadow);
   opacity: .3;
-}
+} */
 
 .mainCard{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 21rem;
-  height: 21rem;
-  margin: 0 2rem;
+  min-width: 15rem;
+  height: 20rem;
+  margin: 0 1rem;
   background-color: var(--gray-600);
   border-radius: 15px;
   box-shadow: 0px 20px 20px var(--soft-black-shadow);
@@ -86,8 +88,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  width: 40%;
-  height: 40%;
+  width: 8rem;
+  height: 8rem;
   overflow: hidden;
   border-radius: 50%;
   border: solid 5px var(--green-500);
@@ -167,4 +169,89 @@
   background-color: var(--gray-400);
   border-radius: 50%;
   box-shadow: 0px 3px 3px var(--soft-black-shadow);
+}
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    line-height: 2rem;
+    border-bottom: 3px solid var(--green-500);
+    animation: rise 2s cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+
+  .mainContainer {
+    margin-bottom: 0rem;
+    max-height: 300px;
+    overflow-y: hidden;
+    width: fit-content;
+    border-radius: 30px;
+    border-left: 1px solid var(--gray-800);
+    border-right: 1px solid var(--gray-800);
+  }
+  
+  .main {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    padding: 3rem 1rem 5rem;
+    margin-bottom: -2rem; 
+    box-shadow: 0 0 20px 0 var(--black-shadow) inset;
+  }
+
+  .mainCard{
+    min-width: 12rem;
+    height: 15rem;
+    margin: 0 1rem;
+    background-color: var(--gray-600);
+    border-radius: 15px;
+    box-shadow: 0px 20px 20px var(--soft-black-shadow);
+  }
+  
+  .mainCard .imgContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 4px var(--green-500);
+    box-shadow: 0 5px 5px var(--soft-black-shadow);
+    margin-bottom: 2rem;
+  }
+  
+  .mainCard .profile h3 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+  }
+  
+  .mainCard .profile p {
+    color: var(--gray-400);
+    font-style: italic;
+  }
+}
+
+@media (min-width: 1300px) {
+  .arrow {
+    display: none;
+  }
+  
+  .mainContainer {
+    border-left: none;
+    border-right: none;
+  }
+  
+  .main {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    padding: 4rem 1rem 6rem;
+    margin-bottom: -2rem; 
+    box-shadow: 0 0 0px 0 var(--black-shadow) inset;
+  }
+
+  .slider {
+    display: none;
+  }
 }

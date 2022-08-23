@@ -20,15 +20,20 @@
     <script>     
       const handleScroll = () => {
         let scroll = window.pageYOffset
-        header = document.querySelector("header")
+        let header = document.querySelector("header")
+        let logo = header.querySelector("#logo")
         header.classList.add("transparentHeader")
         if (scroll === 0) {
           header.classList.remove("header")
           header.classList.add("transparentHeader")
+          logo.style.filter = "brightness(20)  saturate(0)"
+          logo.src = "./src/assets/logo-psf-white.svg"
         }
         else {
           header.classList.remove("transparentHeader")
           header.classList.add("header")
+          logo.style.filter = "brightness(1)  saturate(1)"
+          logo.src = "./src/assets/logo-psf.svg"
         }     
       }
     </script>
@@ -38,7 +43,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0.5rem 0;
+        padding: 0.4rem 0;
         position: sticky;
         width: 100%;
         z-index: 10;
@@ -53,7 +58,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 1.25rem 0;
+        padding: 1rem 0;
         position: sticky;
         width: 100%;
         top: 0;
@@ -62,13 +67,15 @@
       }
 
       .header #logo {
-        height: 3rem;
-        transition: .5s;
+        filter: brightness(1) saturate(1);
+        height: 3.5rem;
+        transition: 2s;
       }
 
       .transparentHeader #logo {
-        height: 3.5rem;
-        transition: .5s;
+        filter: brightness(10) saturate(0);
+        height: 4.5rem;
+        transition: 2s;
       }
     </style>
   </body>

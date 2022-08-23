@@ -1,39 +1,38 @@
-.transparentHeader {
-  background: transparent;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1.25rem 0;
-  position: sticky;
-  width: 100%;
-  top: 0;
-  border-bottom: 1px solid var(--gray-400);
-  transition: .5s;
-  
-}
-
 .header {
   background: var(--gray-700);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: 0.4rem 0;
   position: sticky;
   width: 100%;
   z-index: 10;
   top: 0;
-  box-shadow: 0px 10px 20px var(--black-shadow);
   border-bottom: 1px solid var(--gray-700);
+  box-shadow: 0px 10px 20px var(--black-shadow);
+  transition: .5s;
+}
+
+.transparentHeader {
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid var(--gray-400);
   transition: .5s;
 }
 
 .header .logo {
-  height: 3rem;
+  height: 3.5rem;
   transition: .5s;
 }
 
 .transparentHeader .logo {
-  height: 3.5rem;
+  height: 4.5rem;
   transition: .5s;
 }
 

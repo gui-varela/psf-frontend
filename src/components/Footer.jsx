@@ -1,7 +1,7 @@
 import { MapPin, EnvelopeSimple, InstagramLogo, FacebookLogo } from 'phosphor-react'
 
 import styles from './Footer.module.css' 
-import logo from '../assets/logo-psf-white.svg'
+import logo from '../assets/logo-psf.svg'
 
 export function Footer() {
   return (

@@ -99,7 +99,7 @@ header li a p {
 .inProgress {
   background-color: var(--gray-100);
   position: absolute;
-  padding: 5px;
+  padding: 5px 10px 5px 5px;
   font-weight: bolder;
   color: var(--blue-500);
   transform: translateY(30px);

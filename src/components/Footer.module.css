@@ -20,14 +20,15 @@
 }
 
 .links svg {
-  min-width: 5px;
+  min-width: 15px;
   margin-right: .5rem;
+  margin-top: 2px;
 }
 
 .links .contact {
   display: flex;
-  align-items: center;
-  flex: row;
+  align-items: start;
+  flex-direction: row;
 }
 
 .links .contact p {

@@ -37,7 +37,7 @@ export function TrainingProgramSection({ backgroundColor, image, imageSide, hasT
   }
 
   return (
-    <section className={ backgroundColor == "dark" ? styles.sectionDarkBackground : styles.sectionLightBackground }>
+    <section id='trainingProgram' className={ backgroundColor == "dark" ? styles.sectionDarkBackground : styles.sectionLightBackground } >
       { renderTitle() }
       <article className={styles.goalSection}>
 

@@ -1,5 +1,5 @@
 import { Link, animateScroll as scroll,  } from "react-scroll";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import { Header } from './components/Header'
 import { HomeSection } from './components/HomeSection'
@@ -16,29 +16,13 @@ import selfDevelopmentImage from './assets/boys-training-soccer.png'
 import improvingSkillsImage from './assets/boy-dribbling.jpg'
 import { Registration } from "./components/Registration";
 
-export function App() {
-  const [isTransparent, setIsTransparent] = useState(true)
-  const [canAnimate, setCanAnimate] = useState(false)
-
-  function handleScrollPosition() {
-    const pageHeight = document.querySelector("#pageFeed").getBoundingClientRect().y
-    if (pageHeight > 50) {
-      setIsTransparent(true)
-      console.log(isTransparent)
-    }
-    else {
-      setIsTransparent(false)
-      if ((pageHeight < -80)) {
-        setCanAnimate(true)
-      }
-    }
-  }
-  
+export function App() { 
   return (
-    <div onScroll={handleScrollPosition} className="App">
-      <Header isTransparent={isTransparent}></Header>
-      <div id="pageFeed">
-        <HomeSection/>
+    <div id="pageFeed" className="App">
+      <div id="home">
+        <HomeSection />
+      </div>
+      <div id="trainingProgram">
         <TrainingProgramSection 
           hasTitle={true}
           backgroundColor="dark"
@@ -48,7 +32,7 @@ export function App() {
           subtitleText="Our Goal"
           description="Provide an all year around Futsal training program for players/kids that are interested in becoming a more technical and skilled player regardless of their prospective clubs."
         />
-        <TrainingProgramSection 
+        <TrainingProgramSection
           backgroundColor="light"
           image={selfDevelopmentImage}
           imageSide="right"
@@ -63,11 +47,17 @@ export function App() {
           subtitleText="Improving Skills"
           description="Futsal has helped shape our players' technical proficiency, decision-making in a fast-paced environment, tactical understanding in small Futsal groups and outdoor field settings, improvisation and ability to make quick key adjustments throughout the course of a game."
         />
-        <CoachingStaff />
-        <Registration />
-        <ContactUs />
-        <Footer />
       </div>
+      
+      <div id="coachingStaff">
+        <CoachingStaff />
+      </div>
+      
+      <Registration/>
+      <div id="registration">
+        <ContactUs/>
+      </div>
+      <Footer />
     </div>
   )
 }

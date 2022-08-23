@@ -48,7 +48,7 @@ export function CoachingStaff() {
   }
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container} >
       <div className={styles.title}>
         <h1>Coaching Staff</h1>
       </div>
@@ -93,6 +93,6 @@ export function CoachingStaff() {
           )
         })}
       </div>
-    </div>
+    </section>
   )
 }

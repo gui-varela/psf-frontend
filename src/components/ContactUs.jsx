@@ -5,7 +5,7 @@ import styles from './ContactUs.module.css'
 
 export function ContactUs() {
   return (
-    <section className={styles.mainSection}>
+    <section className={styles.mainSection} id="contactUs">
       <h1>Contact Us!</h1>
       <div className={styles.links}>
         <div className={styles.contact}>

@@ -1,5 +1,4 @@
 .main {
-  margin-top: 5rem;
   width: 100%;
   min-height: 80vh;
   display: flex;
@@ -64,18 +63,22 @@
 @keyframes shadow {
   0% {
     box-shadow: 
-    0px 0px 0px rgba(47, 173, 74, 0.5)
+    0px 0px 0px #2f43a58e
   }
   100% {
     box-shadow: 
     5px 5px 10px rgba(0, 0, 0, 0.5),
-    15px 15px 0px rgba(47, 173, 74, 0.5)
+    15px 15px 0px #2f43a58e
   }
 }
 
 .bannerImage {
   max-height: 35rem;
   filter: brightness(0.8), saturate(1.2);
+}
+
+.section {
+  margin-right: 2rem;
 }
 
 .section h1 {

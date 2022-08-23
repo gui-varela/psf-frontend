@@ -47,7 +47,9 @@
 
 body {
   background-image: url(./assets/body-background.jpg);
-  background-size: contain;
+  background-size: 110%;
+  backdrop-filter: grayscale(.7) blur(5px);
+  -webkit-backdrop-filter: grayscale(.7) blur(5px);
   color: var(--gray-100);
   -webkit-font-smoothing: antialiased;
 }
@@ -74,11 +76,14 @@ a {
   }
 
   
-body {
-  background-size: 300%;
-  background-position: initial;
-  background-image: url(./assets/body-background.jpg);
-}
+  body {
+    background-size: 150%;
+    background-position-x: center;
+    background-position-y: -5%;
+    background-image: url(./assets/body-background-vertical.jpg);
+    backdrop-filter: grayscale(0) blur(3px) brightness(0.4);
+    -webkit-backdrop-filter: grayscale(0) blur(3px) brightness(0.4);
+  }
 }
 
 

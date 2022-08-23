@@ -15,6 +15,7 @@
   --green-500: #1b963b;
   --green-700: #105723;
   --blue-500: #2f43a5;
+  --red-500: #af0911;
 }
 
 * {
@@ -71,6 +72,13 @@ a {
     overflow-x: hidden;
     justify-content: center;
   }
+
+  
+body {
+  background-size: 300%;
+  background-position: initial;
+  background-image: url(./assets/body-background.jpg);
+}
 }
 
 

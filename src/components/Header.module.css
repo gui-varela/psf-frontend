@@ -1,3 +1,32 @@
+.transparentHeader {
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.25rem 0;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid var(--gray-400);
+  transition: .5s;
+  
+}
+
+.header {
+  background: var(--gray-700);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+  position: sticky;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  box-shadow: 0px 10px 20px var(--black-shadow);
+  border-bottom: 1px solid var(--gray-700);
+  transition: .5s;
+}
+
 .header .logo {
   height: 3rem;
   transition: .5s;
@@ -27,6 +56,7 @@ header li a {
   height: 30px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   text-decoration: none;
   color: var(--gray-100);
   padding-bottom: 0.5rem;
@@ -52,6 +82,48 @@ header li a p {
 
 .highlight:hover {
   border: var(--green-500) solid 1px;
+}
+
+.events p {
+  color: var(--gray-400);
+}
+
+.events svg {
+  color: var(--gray-400);
+}
+
+.events a:hover {
+  border: none;
+}
+
+.inProgress {
+  background-color: var(--gray-100);
+  position: absolute;
+  padding: 5px;
+  font-weight: bolder;
+  color: var(--blue-500);
+  transform: translateY(30px);
+  border-radius: 5px;
+  transition-duration: 2s;
+  transition-delay: .5s;
+}
+
+.inProgress span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.inProgress span svg {
+  margin-right: 5px;
+}
+
+.transparent {
+  opacity: 0;
+  display: none;
+  transition-duration: 2s;
+  transition-delay: .5s;
 }
 
 @media (max-width: 1280px) {

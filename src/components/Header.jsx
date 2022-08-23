@@ -1,13 +1,16 @@
 import { Link, animateScroll as scroll } from 'react-scroll'
-import { PencilLine, House, Users, Calendar, Storefront, WhatsappLogo, Barbell, InstagramLogo } from 'phosphor-react'; 
+import { PencilLine, House, Users, Calendar, Storefront, WhatsappLogo, Barbell, InstagramLogo, ClockAfternoon } from 'phosphor-react'; 
 
 import styles from './Header.module.css' 
 import logoPSF from '../assets/logo-psf.svg'
+import { useState } from 'react';
 
 export function Header({isTransparent}) {
+  const [showTooltip, setShowTooltip] = useState(false)
+
   return (
     <header className={isTransparent ? styles.transparentHeader : styles.header }>
-      <img src={logoPSF} className={styles.logo} alt="Logo Pro Skills Futsal" />
+      <img id="logo" src={logoPSF} className={styles.logo} alt="Logo Pro Skills Futsal" />
       <ul>
         <li className='nav-item'>
           <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500}>
@@ -27,11 +30,18 @@ export function Header({isTransparent}) {
             <p>Coaching Staff</p>
           </Link>
         </li>
-        <li>
-          <Link to="/" spy={true} smooth={true} offset={0} duration={500}>
+        <li 
+          onMouseOver={() => setShowTooltip(true)} 
+          onMouseLeave={() => setShowTooltip(false)}  
+          className={styles.events}
+        >
+          <Link to="/" spy={true} smooth={true} offset={0} duration={500} >
             <Calendar size={20} />
             <p>Events</p>
           </Link>
+          <div className={ showTooltip ? styles.inProgress : styles.transparent }>
+            <span><ClockAfternoon size={20} /><i>In progress</i></span>
+          </div>
         </li>
         <li>
           <Link to="registration" spy={true} smooth={true} offset={0} duration={500}>

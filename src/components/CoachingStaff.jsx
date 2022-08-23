@@ -33,18 +33,36 @@ export function CoachingStaff() {
       photo: allan
     },
   ]
-
+  
   const [horizontalPosition, setHorizontalPosition] = useState(0)
 
-  function handleScrollPosition() {
-    const position = document.querySelector("#main").getBoundingClientRect().x
-    if (position > 0) {
-      setHorizontalPosition(document.querySelector("#main").getBoundingClientRect().x)
+  function increaseScrollPosition() {
+    let slider = document.querySelector("#main")
+    slider.scrollLeft = horizontalPosition
+    let scrollWidth = slider.scrollWidth
+    let totalWidth = slider.getBoundingClientRect().width
+    let minSlideDistance = (scrollWidth - totalWidth)/coaches.length
+    setHorizontalPosition(slider.scrollLeft += minSlideDistance)
+    slider.scrollLeft = horizontalPosition
+    console.log(horizontalPosition)
+  }
+
+  function decreaseScrollPosition() {
+    let slider = document.querySelector("#main")
+    slider.scrollLeft = horizontalPosition
+    let scrollWidth = slider.scrollWidth
+    let totalWidth = slider.getBoundingClientRect().width
+    let minSlideDistance = (scrollWidth - totalWidth)/coaches.length
+    setHorizontalPosition(slider.scrollLeft -= minSlideDistance)
+    slider.scrollLeft = horizontalPosition
+    console.log(horizontalPosition)
+  }
+
+  function smoothScroll(distance) {
+    while (delta < distance) {
+      delta++
+      return new Promise(resolve => setTimeout(resolve, ms));
     }
-    else {
-      setHorizontalPosition(0)
-    }
-    console.log(`scroll: ${horizontalPosition}`)
   }
 
   return (
@@ -54,13 +72,13 @@ export function CoachingStaff() {
       </div>
       <section className={styles.coachesSection}>
         
-        <div className={styles.arrow}>
+        <div onClick={decreaseScrollPosition} className={styles.arrow}>
           <CaretLeft size={40}/>
         </div>
 
         <div className={styles.mainContainer}>
           
-          <main onScroll={handleScrollPosition} id='main' className={styles.main}>
+          <main onScroll={console.log(horizontalPosition)} id='main' className={styles.main}>
             {coaches.map(coach => {
               return (
                 <div key={coach.name} className={styles.mainCard}>
@@ -74,25 +92,15 @@ export function CoachingStaff() {
                 </div>
               )
             })}
-            
-
           </main>
 
         </div>
 
-        <div className={styles.arrow}>
+        <div onClick={increaseScrollPosition} className={styles.arrow}>
           <CaretRight size={40}/>
         </div>
 
       </section>
-
-      <div className={styles.slider}>
-        {coaches.map(coach => {
-          return (
-            <div key={coach.name} className={styles.notSelected}></div>
-          )
-        })}
-      </div>
     </section>
   )
 }

@@ -7,7 +7,7 @@ import styles from './global.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Header className={styles.header}/>
+    <Header isTransparent={true}/>
     <App onScroll={() => {console.log("oi")}}/>
   </React.StrictMode>
 )

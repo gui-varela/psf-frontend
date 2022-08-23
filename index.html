@@ -22,8 +22,7 @@
         let scroll = window.pageYOffset
         header = document.querySelector("header")
         header.classList.add("transparentHeader")
-        header.classList.add("header")
-        if (scroll == 0) {
+        if (scroll === 0) {
           header.classList.remove("header")
           header.classList.add("transparentHeader")
         }
@@ -35,7 +34,7 @@
     </script>
     <style>
       .header {
-        background: var(--gray-600);
+        background: var(--gray-700);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -44,6 +43,7 @@
         width: 100%;
         z-index: 10;
         top: 0;
+        border-bottom: 1px solid var(--gray-700);
         box-shadow: 0px 10px 20px var(--black-shadow);
         transition: .5s;
       }
@@ -58,6 +58,16 @@
         width: 100%;
         top: 0;
         border-bottom: 1px solid var(--gray-400);
+        transition: .5s;
+      }
+
+      .header #logo {
+        height: 3rem;
+        transition: .5s;
+      }
+
+      .transparentHeader #logo {
+        height: 3.5rem;
         transition: .5s;
       }
     </style>

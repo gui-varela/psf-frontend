@@ -11,7 +11,7 @@ export function Header({isTransparent}) {
 
   return (
     <header className={isTransparent ? styles.transparentHeader : styles.header }>
-      <img id="logo" src={isTransparent ? logoPSFWhite : logoPSF} className={styles.logo} alt="Logo Pro Skills Futsal" />
+      <img id="logo" src={isTransparent ? logoPSF : logoPSFWhite} className={styles.logo} alt="Logo Pro Skills Futsal" />
       <ul>
         <li className='nav-item'>
           <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500}>

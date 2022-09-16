@@ -1,0 +1,11 @@
+.mainSection {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 10%;
+  background-color: var(--dark-black);
+  color: var(--white);
+}
+
+.mainSection a {
+  color: var(--gray-400);
+}

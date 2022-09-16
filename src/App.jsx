@@ -8,6 +8,7 @@ import { Form } from './components/Form'
 import { CoachingStaff } from './components/CoachingStaff'
 import { ContactUs } from './components/ContactUs'
 import { Footer } from './components/Footer'
+import { CopyrightBar } from './components/CopyrightBar'
 
 import './global.css' 
 
@@ -58,6 +59,7 @@ export function App() {
         <ContactUs/>
       </div>
       <Footer />
+      <CopyrightBar />
     </div>
   )
 }

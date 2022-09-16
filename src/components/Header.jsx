@@ -60,7 +60,7 @@ export function Header({isTransparent}) {
             </a>
           </li>
           <li>
-            <a href="http://">
+            <a target="blank" href="http://proskillsfutsal.ewingsports.com/">
               <Storefront size={24} />
               <p>Store</p>
             </a>

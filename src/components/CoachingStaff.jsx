@@ -2,7 +2,10 @@ import { useState } from 'react'
 import { CaretLeft, CaretRight } from 'phosphor-react'
 
 import styles from './CoachingStaff.module.css'
-import allan from '../assets/allan.jpg'
+import allan from '../assets/coach-allan-costa.jpg'
+import quam from '../assets/coach-quam.jpg'
+import frank from '../assets/coach-frank.jpg'
+import oscar from '../assets/coach-oscar.jpg'
 import coachAvatarImage from '../assets/coach-avatar.jpg'
 
 export function CoachingStaff() {
@@ -10,7 +13,7 @@ export function CoachingStaff() {
     {
       name: "Quam",
       function: "President",
-      photo: allan
+      photo: quam
     },
     {
       name: "Allan Costa",
@@ -20,17 +23,17 @@ export function CoachingStaff() {
     {
       name: "Frank",
       function: "Trainer",
-      photo: allan
+      photo: frank
     },
     {
-      name: "Otto",
+      name: "Oscar",
       function: "Trainer",
-      photo: allan
+      photo: oscar
     },
     {
       name: "Oumar",
       function: "Trainer",
-      photo: allan
+      photo: undefined
     },
   ]
   
@@ -83,7 +86,7 @@ export function CoachingStaff() {
               return (
                 <div key={coach.name} className={styles.mainCard}>
                   <div className={styles.imgContainer}>
-                    <img src={ coach.name == "Allan Costa" ? allan : coachAvatarImage } alt="" />
+                    <img src={ coach.photo ? coach.photo : coachAvatarImage } alt="" />
                   </div>   
                   <div className={styles.profile}>
                     <h3>{coach.name}</h3>

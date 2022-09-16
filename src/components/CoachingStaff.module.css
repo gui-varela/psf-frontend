@@ -98,7 +98,7 @@
 }
 
 .mainCard .imgContainer img {
-  height: 130%;
+  width: 110%;
 }
 
 .profile {
@@ -133,7 +133,7 @@
 }
 
 .smallCard .imgContainer img {
-  height: 130%;
+  width: 110%;
 }
 
 .smallCard .profile h3 {

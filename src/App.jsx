@@ -13,7 +13,7 @@ import { CopyrightBar } from './components/CopyrightBar'
 import './global.css' 
 
 import ourGoalImage from './assets/coach-coaching-boys.jpg'
-import selfDevelopmentImage from './assets/boys-training-soccer.png'
+import selfDevelopmentImage from './assets/boys-training-soccer.jpg'
 import improvingSkillsImage from './assets/boy-dribbling.jpg'
 import { Registration } from "./components/Registration";
 

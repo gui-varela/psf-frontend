@@ -28,6 +28,7 @@
 
 .aside {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 60%;
@@ -46,20 +47,92 @@
   }
 }
 
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider svg {
+  cursor: pointer;
+}
+
+.slider svg:hover {
+  color: var(--gray-400);
+}
+
+.sliderPosition {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  margin: 1rem 0 2rem;
+}
+
+.ball {
+  width: 7px;
+  height: 7px;
+  background-color: var(--white);
+  border-radius: 50%;
+  margin: 0 .3rem;
+  box-shadow: 0 2px 4px var(--black-shadow);
+  opacity: .5;
+  transition: 300ms;
+}
+
+.selectedBall {
+  width: 10px;
+  height: 10px;
+  background-color: var(--green-500);
+  border-radius: 50%;
+  margin: 0 .3rem;
+  box-shadow: 0 2px 4px var(--black-shadow);
+  transition: 300ms;
+}
+
 .imageContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  max-width: 40rem;
-  height: 30rem;
+  width: 40rem;
+  height: 28rem;
   border-radius: 10px;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, .7)
+  background-color: var(--black-shadow);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, .7);
 }
 
 .bannerImage {
-  max-height: 35rem;
+  height: 30rem;
   filter: brightness(0.8), saturate(1.2);
+  animation: fade-in 1s;
+}
+
+.changingBannerImage {
+  height: 30rem;
+  filter: brightness(0.8), saturate(1.2);
+  animation: fade-out 1s;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .section {
@@ -123,6 +196,21 @@
   .main {
     padding: 0 10%;
   }
+
+  .imageContainer {
+    width: 70%;
+    max-height: 24rem;
+  }
+
+  .bannerImage {
+    height: 24rem;
+    object-fit: cover;
+  }
+  
+  .changingBannerImage {
+    height: 24rem;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 768px) {
@@ -152,13 +240,20 @@
   }
 
   .imageContainer {
-    width: 70%;
-    height: 12rem;
-    margin: 0 0 5rem 0;
+    max-width: 22rem;
+    max-height: 16rem;
   }
 
   .bannerImage {
-    max-height: 20rem;
+    height: 18rem;
+  }
+  
+  .changingBannerImage {
+    height: 18rem;
     object-fit: cover;
+  }
+
+  .sliderPosition {
+    margin: 1rem 0 2rem;
   }
 }

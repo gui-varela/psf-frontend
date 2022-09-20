@@ -14,11 +14,11 @@ export function ContactUs() {
         </div>
         <div className={styles.contact}>
           <InstagramLogo />
-          <a href="https://www.instagram.com/proskillsfutsal/"><p>@proskillsfutsal</p></a>
+          <a target="blank" href="https://www.instagram.com/proskillsfutsal/"><p>@proskillsfutsal</p></a>
         </div>
         <div className={styles.contact}>
           <FacebookLogo />
-          <a href="https://www.facebook.com/proskillsfutsal/"><p>Pro Skills Futsal</p></a>
+          <a target="blank" href="https://www.facebook.com/proskillsfutsal/"><p>Pro Skills Futsal</p></a>
         </div>
       </div> 
     </section>

@@ -49,7 +49,11 @@ export function TrainingProgramSection({ backgroundColor, image, imageSide, hasT
             <h2>{ subtitleText }</h2>
           </span>
           <p>{ description }</p>
-          <button className={styles.button}>Register Now! <Pencil/></button>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHNgHgoFXzi7mWOwsLmWC7mpbYZXkOUbK-8gbSSAMSh7GDpA/viewform" 
+            target="blank" 
+            rel="noopener noreferrer">
+              <button className={styles.button}>Register Now! <Pencil/></button>
+          </a>
         </div>
 
         { setImageSide("right") }

@@ -57,7 +57,7 @@ export function HomeSection() {
       <section className={styles.section}>
         <h1>About Us</h1>
         <p>Pro Skills Futsal is a club-neutral supplemental Futsal training program located in Southern part of New Jersey. Our program has achieved tremendous individual and competitive success in the Youth Futsal Arena at the State, Regional and National levels. </p>
-        <a target="blank" href='https://docs.google.com/forms/d/e/1FAIpQLSfHNgHgoFXzi7mWOwsLmWC7mpbYZXkOUbK-8gbSSAMSh7GDpA/viewform'>
+        <a target="blank" href='https://docs.google.com/forms/d/e/1FAIpQLSfT2BQ9f1yYIM_ISU_7xioGSdsfacGxcPCF8_BDOEX0uSIjHw/viewform?fbclid=IwAR1Y5-uxfl-C-fHtN0nNdLw4KJNpBN39xr0Gj219VzNutJCeZpUI7WFmGAo'>
           <ArrowRight />
           <span>Register Now!</span>
         </a>

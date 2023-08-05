@@ -54,15 +54,9 @@ export function Header({isTransparent}) {
       <aside className={styles.social}>
         <ul>
           <li>
-            <a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfHNgHgoFXzi7mWOwsLmWC7mpbYZXkOUbK-8gbSSAMSh7GDpA/viewform">
+            <a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfT2BQ9f1yYIM_ISU_7xioGSdsfacGxcPCF8_BDOEX0uSIjHw/viewform?fbclid=IwAR1Y5-uxfl-C-fHtN0nNdLw4KJNpBN39xr0Gj219VzNutJCeZpUI7WFmGAo">
               <PencilLine size={20} />
               <p>Registration</p>
-            </a>
-          </li>
-          <li>
-            <a target="blank" href="http://proskillsfutsal.ewingsports.com/">
-              <Storefront size={24} />
-              <p>Store</p>
             </a>
           </li>
           <li>

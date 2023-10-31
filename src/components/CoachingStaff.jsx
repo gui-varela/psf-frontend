@@ -17,7 +17,7 @@ export function CoachingStaff() {
     },
     {
       name: "Allan Costa",
-      function: "Director",
+      function: "Trainer",
       photo: allan
     },
     {

@@ -21,11 +21,6 @@ export function CoachingStaff() {
       photo: allan
     },
     {
-      name: "Frank",
-      function: "Trainer",
-      photo: frank
-    },
-    {
       name: "Oscar",
       function: "Trainer",
       photo: oscar

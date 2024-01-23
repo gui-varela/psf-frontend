@@ -26,6 +26,11 @@ const coaches = [
       photo: oscar
     },
     {
+      name: "Frank",
+      function: "Trainer",
+      photo: frank
+    },
+    {
       name: "Oumar",
       function: "Trainer",
       photo: undefined

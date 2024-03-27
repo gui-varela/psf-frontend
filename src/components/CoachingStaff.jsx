@@ -9,7 +9,7 @@ import oscar from '../assets/coach-oscar.jpg'
 import coachAvatarImage from '../assets/coach-avatar.jpg'
 
 export function CoachingStaff() {
-const coaches = [
+const coaches = const coaches = [
     {
       name: "Quam",
       function: "President",
@@ -17,23 +17,13 @@ const coaches = [
     },
     {
       name: "Allan Costa",
-      function: "Trainer",
+      function: "Director",
       photo: allan
     },
     {
       name: "Oscar",
       function: "Trainer",
       photo: oscar
-    },
-    {
-      name: "Frank",
-      function: "Trainer",
-      photo: frank
-    },
-    {
-      name: "Oumar",
-      function: "Trainer",
-      photo: undefined
     },
   {
       name: "Awal",
@@ -44,8 +34,8 @@ const coaches = [
       name: "Baba",
       function: "Trainer",
       photo: undefined
-    },
-  ]
+    },
+  ]
   
   const [horizontalPosition, setHorizontalPosition] = useState(0)
 

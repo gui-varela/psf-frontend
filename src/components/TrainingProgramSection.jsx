@@ -49,7 +49,7 @@ export function TrainingProgramSection({ backgroundColor, image, imageSide, hasT
             <h2>{ subtitleText }</h2>
           </span>
           <p>{ description }</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfT2BQ9f1yYIM_ISU_7xioGSdsfacGxcPCF8_BDOEX0uSIjHw/viewform?fbclid=IwAR1Y5-uxfl-C-fHtN0nNdLw4KJNpBN39xr0Gj219VzNutJCeZpUI7WFmGAo" 
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSffiR1q6IQmGVUosmgr9eck4dEh5GfF7dc_OQS0SOJFlc3Nhw/viewform " 
             target="blank" 
             rel="noopener noreferrer">
               <button className={styles.button}>Register Now! <Pencil/></button>

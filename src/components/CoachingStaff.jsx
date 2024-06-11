@@ -9,7 +9,7 @@ import oscar from '../assets/coach-oscar.jpg'
 import coachAvatarImage from '../assets/coach-avatar.jpg'
 
 export function CoachingStaff() {
-const coaches = const coaches = [
+const coaches = [
     {
       name: "Quam",
       function: "President",

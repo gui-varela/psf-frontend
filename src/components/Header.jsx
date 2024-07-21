@@ -31,19 +31,6 @@ export function Header({isTransparent}) {
             <p>Coaching Staff</p>
           </Link>
         </li>
-        <li 
-          onMouseOver={() => setShowTooltip(true)} 
-          onMouseLeave={() => setShowTooltip(false)}  
-          className={styles.events}
-        >
-          <Link to="/" spy={true} smooth={true} offset={0} duration={500} >
-            <Calendar size={20} />
-            <p>Events</p>
-          </Link>
-          <div className={ showTooltip ? styles.inProgress : styles.transparent }>
-            <span><ClockAfternoon size={20} /><i>In progress</i></span>
-          </div>
-        </li>
         <li>
           <Link to="registration" spy={true} smooth={true} offset={0} duration={500}>
             <WhatsappLogo size={20} />

@@ -1,8 +1,8 @@
 import { ArrowRight, CaretLeft, CaretRight } from 'phosphor-react'
 
-import bannerImage1 from '../assets/pro-skill-futsal-kids-hugging.jpg'
+import bannerImage1 from '../assets/futsal-kids.jpg'
 import bannerImage2 from '../assets/pro-skill-futsal-all-kids.jpg'
-import bannerImage3 from '../assets/boys-training-soccer.jpg'
+import bannerImage3 from '../assets/futsal-girls-team.jpg'
 import bannerImage4 from '../assets/boys-listening-coach-instructions.jpg'
 import styles from './HomeSection.module.css'
 import { useState } from 'react'
@@ -56,7 +56,12 @@ export function HomeSection() {
     <main className={styles.main}>
       <section className={styles.section}>
         <h1>About Us</h1>
-        <p>Pro Skills Futsal is a club-neutral supplemental Futsal training program located in Southern part of New Jersey. Our program has achieved tremendous individual and competitive success in the Youth Futsal Arena at the State, Regional and National levels. </p>
+        <p>
+          Pro Skills Futsal is a club-neutral supplemental futsal club located in Southern part of New Jersey. As great skill developers, our training methodology will help players improve their technical skills, speed of play and quick decision-making skill.
+        </p>
+        <p>  
+          Futsal has helped shape our players’ technical proficiency, become more creative, confident on the ball in a small sided fast-paced environment.
+        </p>
         <a target="blank" href='https://docs.google.com/forms/d/e/1FAIpQLSffiR1q6IQmGVUosmgr9eck4dEh5GfF7dc_OQS0SOJFlc3Nhw/viewform '>
           <ArrowRight />
           <span>Register Now!</span>

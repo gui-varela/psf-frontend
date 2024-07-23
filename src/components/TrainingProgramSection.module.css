@@ -173,9 +173,10 @@ section h1 {
 
   .goalSectionLeft, .goalSectionRight {
     align-items: center;
-    padding: 0 2.5rem;
+    padding: 0 0.75rem;
     flex-direction: column;
-    gap: 2rem;;
+    gap: 2rem;
+    max-width: 100%;
   }
 
   .imageContainer {

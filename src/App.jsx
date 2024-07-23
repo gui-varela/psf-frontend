@@ -90,7 +90,7 @@ export function App() {
                 image={futsalAcademy2}
                 imageSide="left"
                 subtitleIcon="ball"
-                description="Our goal is to develop players through the aspects of the futsal game that can be translates to improved perfomance on the soccer field. Players participating in our training program also have the opportunity to be trained and evaluated weekly by our experienced futsal coaching staff, some with prior experience as professional players, and have the chance of being invited to be part of our academy team."
+                description="Our futsal academy program consists of selected players that will form teams and represent Pro Skills Futsal Academy is the highest level of futsal competitions around the United States and internationally. The selection process will be made through invitations by our experienced coaching staff."
               />
               <TrainingProgramSection 
                 sectionId="academyProgram"
@@ -102,7 +102,7 @@ export function App() {
                 imageSide="right"
                 subtitleIcon="ball"
                 description={[
-                  "The training program does not include futsal competition or official games. There is no guarantee that a player registered for the training program will be selected for the academy team.",
+                  "Selection/Invitation will be based on players’ interest, and level of play which will determine which  competition will be suitable for each individual player to play in. ",
                   "Note: Preferences will be given to players that are registered in our training program. "
                 ]}
               />

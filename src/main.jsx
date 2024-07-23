@@ -8,6 +8,6 @@ import styles from './global.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header isTransparent={true}/>
-    <App onScroll={() => {console.log("oi")}}/>
+    <App />
   </React.StrictMode>
 )

@@ -18,6 +18,10 @@
   width: 100%;
 }
 
+.subsection {
+  padding: 0 0 4rem;
+}
+
 section h1 {
   padding-bottom: 1rem;
   font-family: 'Kanit';
@@ -42,12 +46,20 @@ section h1 {
   }
 }
 
-.goalSection {
+.goalSectionRight, .goalSectionLeft {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  gap: 2rem;
   max-width: 1080px;
   animation: rise 2s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.goalSectionLeft {
+  flex-direction: row;
+} 
+
+.goalSectionRight {
+  flex-direction: row-reverse;
 } 
 
 .imageContainer {
@@ -100,35 +112,36 @@ section h1 {
 
 .textContainer h2 {
   font-family: 'Kanit';
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.8rem;
+  text-align: left;
 }
 
 .textContainer p {
   font-size: 1.2rem;
   line-height: 2rem;
   margin: 1rem 0;
+  padding-left: 1rem;
 }
 
 .button {
   display: flex;
   justify-content: end;
+  align-items: center;
   margin: 2rem 0;
-  background-color: var(--green-500);
+  background-color: transparent;
   border: none;
   border-radius: 10px;
   padding: 0.8rem 1rem;
   font-weight: bolder;
   font-size: 1.3rem;
-  color: var(--gray-100);
-  box-shadow: 0 15px 20px var(--soft-black-shadow);
+  color: var(--green-500);
   animation: go-back 2s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
   cursor: pointer;
   transition: 300ms;
 }
 
 .button:hover {
-  background-color: var(--green-700);
+  background-color: var(--gray-700);
 }
 
 .button svg {
@@ -158,10 +171,11 @@ section h1 {
     padding: 2rem 0;
   }
 
-  .goalSection {
+  .goalSectionLeft, .goalSectionRight {
     align-items: center;
-    flex-direction: column;
     padding: 0 2.5rem;
+    flex-direction: column;
+    gap: 2rem;;
   }
 
   .imageContainer {
@@ -169,15 +183,13 @@ section h1 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    max-width: 100%;
-    max-height: 12rem;
-    min-height: 8rem;
+    max-width: 90%;
+    min-height: 6rem;
     border-radius: 7px;
   }
 
   .imageContainer img {
     height: 100%;
-    max-width: 100%;
   }
 
   section h1 {
@@ -206,7 +218,8 @@ section h1 {
   }
   
   #rightImageContainer {
-    display: none;
+    margin-left: 0rem;
+    margin-bottom: 3rem;
   }
 }
 

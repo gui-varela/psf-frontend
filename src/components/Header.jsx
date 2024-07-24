@@ -41,7 +41,7 @@ export function Header({isTransparent}) {
       <aside className={styles.social}>
         <ul>
           <li>
-            <a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSffiR1q6IQmGVUosmgr9eck4dEh5GfF7dc_OQS0SOJFlc3Nhw/viewform ">
+            <a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfrpb-gaaQjIlfsgZZF0vk0U2oLJEb2oXms2FERn8hvr5t5oQ/viewform">
               <PencilLine size={20} />
               <p>Registration</p>
             </a>

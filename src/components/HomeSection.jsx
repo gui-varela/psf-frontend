@@ -62,7 +62,7 @@ export function HomeSection() {
         <p>  
           Futsal has helped shape our players’ technical proficiency, become more creative, confident on the ball in a small sided fast-paced environment.
         </p>
-        <a target="blank" href='https://docs.google.com/forms/d/e/1FAIpQLSeS91fa-D4-1A3TWzHUY_-GrpKylc6eudjWKlsuXneouiwq1Q/viewform'>
+        <a target="blank" href='https://docs.google.com/forms/d/e/1FAIpQLSfrpb-gaaQjIlfsgZZF0vk0U2oLJEb2oXms2FERn8hvr5t5oQ/viewform'>
           <ArrowRight />
           <span>Register Now!</span>
         </a>

@@ -13,6 +13,18 @@
   transition: .5s;
 }
 
+.cta {
+  border-bottom: 2px solid var(--green-500);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+.cta:hover {
+  color: var(--green-500);
+  border-bottom: 2px solid var(--green-700);
+}
+
 .transparentHeader {
   background: transparent;
   display: flex;
@@ -131,10 +143,16 @@ header li a p {
     padding: 1rem 0;
   }
   
-  header a p {
+  header > ul a p {
     color: #ffffff00;
-    visibility: hidden;
+    display: none;
     max-width: 0;
+  }
+
+  .cta a p {
+    display: flex;
+    flex-grow: 1;
+    align-items: end;
   }
 
   header a {
@@ -153,6 +171,9 @@ header li a p {
   }
 
   header aside {
-    max-width: 6rem;
+    display: flex;
+    flex-grow: 1;
+    max-width: 20rem;
+    justify-content: end;
   }
 }

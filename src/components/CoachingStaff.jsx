@@ -2,9 +2,10 @@ import { useState } from 'react'
 import { CaretLeft, CaretRight } from 'phosphor-react'
 
 import styles from './CoachingStaff.module.css'
-import allan from '../assets/coach-allan-costa.jpg'
+import allan from '../assets/allan-director.jpg'
 import quam from '../assets/coach-quam.jpg'
-import frank from '../assets/coach-frank.jpg'
+import awal from '../assets/coach-awal.jpg'
+import baba from '../assets/coach-baba.jpg'
 import oscar from '../assets/coach-oscar.jpg'
 import coachAvatarImage from '../assets/coach-avatar.jpg'
 
@@ -17,7 +18,7 @@ const coaches = [
     },
     {
       name: "Allan Costa",
-      function: "Director",
+      function: "Director/Trainer",
       photo: allan
     },
     {
@@ -28,12 +29,12 @@ const coaches = [
   {
       name: "Awal",
       function: "Trainer",
-      photo: undefined
+      photo: awal
     },
   {
       name: "Baba",
       function: "Trainer",
-      photo: undefined
+      photo: baba
     },
   ]
   

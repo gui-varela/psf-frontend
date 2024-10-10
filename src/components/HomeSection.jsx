@@ -3,7 +3,7 @@ import { ArrowRight, CaretLeft, CaretRight } from 'phosphor-react'
 import bannerImage1 from '../assets/futsal-kids.jpg'
 import bannerImage2 from '../assets/pro-skill-futsal-all-kids.jpg'
 import bannerImage3 from '../assets/futsal-girls-team.jpg'
-import bannerImage4 from '../assets/boys-listening-coach-instructions.jpg'
+import bannerImage4 from '../assets/boys-winning-medal.jpg'
 import styles from './HomeSection.module.css'
 import { useState } from 'react'
 

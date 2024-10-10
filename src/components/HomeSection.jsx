@@ -64,7 +64,7 @@ export function HomeSection() {
         </p>
         <a target="blank" href='https://docs.google.com/forms/d/e/1FAIpQLSfrpb-gaaQjIlfsgZZF0vk0U2oLJEb2oXms2FERn8hvr5t5oQ/viewform'>
           <ArrowRight />
-          <span>Register Now!</span>
+          <span>Register now for our training program!</span>
         </a>
       </section> 
             

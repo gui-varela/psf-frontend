@@ -43,7 +43,7 @@ export function Header({isTransparent}) {
           <li>
             <a className={styles.cta} target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeS91fa-D4-1A3TWzHUY_-GrpKylc6eudjWKlsuXneouiwq1Q/viewform">
               <PencilLine size={20} />
-              <p>Tryouts Registration</p>
+              <p>Academy Tryouts</p>
             </a>
           </li>
           <li>

@@ -111,6 +111,7 @@ export function App() {
         </div> 
         <div id="streetProgram">
           <TrainingProgramSection 
+            hasLink={true}
             sectionId="streetProgram"
             backgroundColor="dark"
             image={streetImage}

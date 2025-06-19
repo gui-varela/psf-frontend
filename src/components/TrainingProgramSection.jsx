@@ -3,7 +3,7 @@ import { Pencil, ChartLineUp, SoccerBall, Alarm, CaretDown, CaretUp } from 'phos
 import { Link, animateScroll as scroll } from 'react-scroll'
 import styles from './TrainingProgramSection.module.css'
 
-export function TrainingProgramSection({ backgroundColor, handleReadMore, sectionId="home", subsection=false, image, position="mid", imageSide, title, subtitleText, subtitleIcon, description }) {
+export function TrainingProgramSection({ hasLink = false, backgroundColor, handleReadMore, sectionId="home", subsection=false, image, position="mid", imageSide, title, subtitleText, subtitleIcon, description }) {
   const renderTitle = () => {
     if (title) {
       return (<h1>{title}</h1>)
@@ -46,9 +46,19 @@ export function TrainingProgramSection({ backgroundColor, handleReadMore, sectio
       </article>
       {
         position === "last" &&
-        <Link onClick={handleReadMore} className={styles.button} to={sectionId} spy={true} smooth={true} offset={-200} duration={500}>
-          Read less<CaretUp weight='bold'/>
-        </Link>
+          <Link onClick={handleReadMore} className={styles.button} to={sectionId} spy={true} smooth={true} offset={-200} duration={500}>
+            Read less<CaretUp weight='bold'/>
+          </Link>
+      }
+      { hasLink &&
+        <div className={styles.buttonArea}>
+          <a 
+            href='https://docs.google.com/forms/d/e/1FAIpQLSffiR1q6IQmGVUosmgr9eck4dEh5GfF7dc_OQS0SOJFlc3Nhw/viewform' 
+            target="blank" className={styles.formLink}
+          >
+            <Pencil size={30}/>Click here to register
+          </a>
+        </div>
       }
     </section>
   )

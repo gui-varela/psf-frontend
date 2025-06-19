@@ -123,6 +123,15 @@ section h1 {
   padding-left: 1rem;
 }
 
+.buttonArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
 .button {
   display: flex;
   justify-content: end;
@@ -138,6 +147,23 @@ section h1 {
   animation: go-back 2s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
   cursor: pointer;
   transition: 300ms;
+}
+
+.formLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--green-500);
+  border: 2px solid var(--green-500);
+  max-width: max-content;
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  color: var(--gray-100);
+  gap: 0.5rem;
+  margin-top: 4rem;
 }
 
 .button:hover {
@@ -221,6 +247,10 @@ section h1 {
   #rightImageContainer {
     margin-left: 0rem;
     margin-bottom: 3rem;
+  }
+
+  .formLink {
+    margin-top: 3rem;
   }
 }
 

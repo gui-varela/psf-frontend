@@ -41,9 +41,9 @@ export function Header({isTransparent}) {
       <aside className={styles.social}>
         <ul>
           <li>
-            <a className={styles.cta} target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeS91fa-D4-1A3TWzHUY_-GrpKylc6eudjWKlsuXneouiwq1Q/viewform">
-              <PencilLine size={20} />
-              <p>Academy Tryouts</p>
+            <a className={styles.cta} target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSffiR1q6IQmGVUosmgr9eck4dEh5GfF7dc_OQS0SOJFlc3Nhw/viewform">
+              <PencilLine size={18} />
+              <p>Register Now!</p>
             </a>
           </li>
           <li>
